@@ -1,0 +1,110 @@
+/* UserDetail.css */
+.userDetailContainer {
+    background-color: #c9deff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userProfileCard {
+    position: relative;
+    left: 50% !important;
+    transform: translate(-50%)!important;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 60% !important;
+    overflow: hidden !important;
+    margin-top: 6%;
+}
+
+.userProfilePhoto {
+    display: flex;
+    justify-content: center;
+    background: lightblue;
+    padding-top: 20px;
+}
+
+.userProfilePhoto img {
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.userProfileInfo {
+    text-align: center;
+    padding: 10px 20px;
+    background: lightblue;
+}
+
+.userProfileInfo h1 {
+    font-size: 22px;
+    margin: 10px 0 5px;
+}
+
+.userProfileInfo .userTitle {
+    font-size: 14px;
+    color: #666;
+}
+
+.userProfileInfo .userInstitute {
+    font-size: 12px;
+    color: #999;
+    margin: 10px 0;
+}
+
+.userProfileInfo .userConnections {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.userAbout, .userEducation, .userSkills {
+    padding: 20px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.userAbout h2, .userEducation h2, .userSkills h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.userAbout p, .userEducation p, .userSkills ul {
+    font-size: 14px;
+    color: #555;
+}
+
+.userSkills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.userSkills ul li {
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.userActions {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+}
+
+.userActions a {
+    margin: 0 10px;
+    color: #512da8;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.userActions a:hover {
+    color: #2e3fa1;
+}

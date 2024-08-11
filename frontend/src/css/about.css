@@ -1,0 +1,118 @@
+General Styles
+
+
+.header {
+    background: linear-gradient(to right, #0099ff, #0033cc);
+    padding: 10px 0;
+}
+
+.main-content {
+    padding: 20px;
+    flex: 1; /* Allows main content to take up available space */
+    margin-top: 8%;
+}
+
+.about-section {
+    text-align: center;
+}
+
+.about-title {
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.founders-section {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.founders-title {
+    margin-bottom: 20px;
+}
+
+.founders-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between founder cards */
+    flex-wrap: wrap; /* Allows wrapping to the next line if screen is too small */
+}
+
+.founder {
+    background: linear-gradient(to right, rgb(70, 70, 125), rgb(145, 145, 200));
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    color: white !important;
+}
+
+p:hover
+{
+    color:none;
+}
+.founder-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.founder-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.founder-role {
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Unique Social Media Classes */
+.social-media-founder1 a.linkedin { color: #0077b5; }
+.social-media-founder1 a.twitter { color: #1da1f2; }
+.social-media-founder1 a.instagram { color: #e1306c; }
+
+.social-media-founder2 a.linkedin { color: #0077b5; }
+.social-media-founder2 a.twitter { color: #1da1f2; }
+.social-media-founder2 a.instagram { color: #e1306c; }
+
+.social-media-founder3 a.linkedin { color: #0077b5; }
+.social-media-founder3 a.twitter { color: #1da1f2; }
+.social-media-founder3 a.instagram { color: #e1306c; }
+
+.social-media a {
+    margin: 5px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.social-media a:hover {
+    transform: scale(1.2); /* Slightly increase the size of the icon on hover */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures the body and html elements take up the full height */
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the main container takes up at least the full height of the viewport */
+}
+
+.main-content {
+    padding: 20px;
+    flex: 1; /* Allows main content to take up available space */
+}

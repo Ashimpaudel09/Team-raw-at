@@ -1,0 +1,81 @@
+html, body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container takes the full height of the viewport */
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .profileSection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .profilePicture {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+  
+  .profilePicture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .details {
+    flex-grow: 1;
+  }
+  
+  .name {
+    font-size: 28px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .email, .education, .skills, .intrest {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .socialLinks, .projects {
+    margin-top: 20px;
+  }
+  
+  .socialLinks h2, .projects h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .socialLinks ul, .projects ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .socialLinks li, .projects li {
+    margin-bottom: 8px;
+  }
+  
+  .socialLinks a, .projects a {
+    text-decoration: none;
+    color: #512da8;
+    font-size: 16px;
+  }
+  
+  .socialLinks a:hover, .projects a:hover {
+    text-decoration: underline;
+  }
+  
+  .error, .loading {
+    text-align: center;
+    margin-top: 20px;
+  }
+  

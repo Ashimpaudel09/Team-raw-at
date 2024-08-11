@@ -1,0 +1,309 @@
+/* Home container */
+.home {
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: auto; /* Let the content determine the height */
+}
+
+/* Heading for Suggested Account */
+.home h2 {
+    margin-bottom: 20px; /* Add space below the heading */
+    font-size: 24px; /* Adjust size if needed */
+    color: #333; /* Adjust color if needed */
+}
+
+/* Profile cards container */
+.profile-cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping */
+    width: 100%;
+    max-width: 1200px; /* Optional: set a max-width for the container */
+    box-sizing: border-box;
+}
+
+/* Profile card */
+.profile-card {
+    background: linear-gradient(to right, rgba(12, 12, 190, 0.372), rgba(8, 8, 213, 0.458));
+
+    width: 100%;
+    max-width: 300px; /* Set a max-width for each card */
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    position: relative; /* Make the card container relative for absolute positioning inside */
+    box-sizing: border-box;
+    height: 300px;
+}
+
+.profile-card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile picture */
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 30px;
+    animation: profilePicAnimation 1s ease-in-out;
+}
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    animation: socialIconsAnimation 1s ease-in-out;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFE4D4;
+    transform: scale(1.2);
+}
+
+/* Follow button */
+.follow-btn {
+    background-color: white;
+    color: #3a3dff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: absolute;
+    bottom: 20px; /* Position the buttons at the bottom of the card */
+    width: max-content;
+    background: linear-gradient(to right, rgba(187, 187, 202, 0.978), rgba(85, 85, 168, 0.675));
+
+}
+
+.send-dm-btn {
+    left: 20px; /* Position Send DM button in the bottom-left corner */
+}
+
+.visit-profile-btn {
+    right: 20px; /* Position Visit Profile button in the bottom-right corner */
+}
+
+.follow-btn:hover {
+    background-color: #FF7F5A;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .profile-cards-container {
+        width: 100%;
+    }
+
+    .profile-card {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+}
+.tala{
+   margin: 10px;
+}/* Overlay for the chat popup */
+/* Overlay for the chat popup */
+.chat-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Chat popup styling */
+.chat-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 70%; /* Increased height */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+/* Header of the chat */
+.chat-header {
+    background-color: #3a8cff;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Username and profile picture in the chat header */
+.chat-username {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.chat-user-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Actions (Audio Call, Video Call, Close Chat) */
+.chat-actions {
+    display: flex;
+    gap: 20px; /* Increased space between buttons */
+    align-items: center; /* Align items to center */
+}
+
+/* Chat action buttons */
+.chat-action-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px; /* Reduced size by 2px */
+    cursor: pointer;
+}
+
+/* Close button style */
+.close-chat {
+    background-color: #b3001b; /* Dark red background */
+    color: white;
+    font-size: 15px; /* Reduced size by 5px */
+    cursor: pointer;
+    padding: 5px 10px; /* Padding for better appearance */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Message container */
+.chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align messages to the start of the container */
+}
+
+/* Message styling */
+.message {
+    display: block;
+    max-width: 70%; /* Optional: Adjust as needed */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word; /* Handles long words */
+}
+
+.message.user {
+    background-color: #3a8cff;
+    color: white;
+    text-align: right; /* Align text to the right for sent messages */
+    margin-left: auto; /* Push the message to the right */
+}
+
+.message.response {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    text-align: left; /* Align text to the left for received messages */
+    margin-right: auto; /* Push the message to the left */
+}
+
+.message-time {
+    font-size: 12px;
+    color: #2200ff;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Input area for typing messages */
+.chat-input-area {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    align-items: center; /* Align items vertically */
+}
+
+/* Input field for messages */
+.chat-input {
+    padding: 10px;
+    border: none;
+    flex: 1;
+}
+
+/* Button for attaching files */
+.attach-file-btn {
+    background: none;
+    border: none;
+    color: #3a8cff;
+    font-size: 16px; /* Reduced size by 2px */
+    cursor: pointer;
+    margin-right: 15px; /* Space from the input */
+}
+
+/* Button for sending messages */
+.send-message-btn {
+    background-color: #3a8cff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Gap between text and icon */
+}
+
+/* Text next to the send button */
+.send-message-text {
+    margin-left: 10px; /* Space between text and icon */
+}
+
+/* Button for voice message */
+.voice-message-btn {
+    background: none;
+    border: none;
+    color: #3a8cff;
+    font-size: 16px; /* Reduced size by 2px */
+    cursor: pointer;
+    margin-right: 10px; /* Space between voice button and input */
+}
+
+/* Button for image attachment */
+.image-attachment-btn {
+    background: none;
+    border: none;
+    color: #3a8cff;
+    font-size: 16px; /* Reduced size by 2px */
+    cursor: pointer;
+    margin-right: 15px; /* Space between image button and input */
+}

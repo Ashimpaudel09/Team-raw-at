@@ -1,0 +1,388 @@
+
+  /* Courses Container Styles */
+  .courses-container {
+    padding: 15px 9% !important;
+    padding-bottom: 100px !important;
+    background: linear-gradient(to right, rgb(70, 70, 125)rgb(145, 145, 200)) !important;
+  }
+  
+  .courses-heading {
+    margin-top: 7% !important;
+    text-align: center !important;
+    padding-bottom: 15px !important;
+    color: #fff !important;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2) !important;
+    font-size: 50px !important;
+  }
+  
+  .courses-box-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)) !important;
+    gap: 30px !important;
+  }
+  
+  .courses-box {
+    box-shadow: 0 5px 10px rgba(0,0,0,.2) !important;
+    border-radius: 5px !important;
+    background: #fff !important;
+    text-align: center !important;
+    padding: 30px 20px !important;
+    transition: .2s linear !important;
+  }
+  
+  .courses-box-img {
+    height: 80px !important;
+  }
+  
+  .courses-box-title {
+    color: #444 !important;
+    font-size: 22px !important;
+    padding: 10px 0 !important;
+  }
+  
+  .courses-box-description {
+    color: #777 !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+  }
+  
+  .courses-btn {
+    margin-top: 10px !important;
+    display: inline-block !important;
+    background: #333 !important;
+    color: #fff !important;
+    font-size: 17px !important;
+    border-radius: 5px !important;
+    padding: 8px 25px !important;
+    text-decoration: none !important;
+  }
+  
+  .courses-btn:hover {
+    letter-spacing: 1px !important;
+  }
+  
+  .courses-box:hover {
+    box-shadow: 0 10px 15px rgba(0,0,0,.3) !important;
+    transform: scale(1.03) !important;
+  }
+  
+  @media (max-width: 768px) {
+    .courses-container {
+      padding: 20px !important;
+    }
+  }
+  
+  /* CSS for the CourseDetail Component */
+  .course-detail-container {
+    padding: 20px !important;
+    font-family: Arial, sans-serif !important;
+    background: linear-gradient(to right, #e0f7fa #b2ebf2 ) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    max-width: 800px !important;
+    margin: 40px auto !important;
+  }
+  
+  .course-detail-container h1 {
+    color: #2a3f5f !important;
+    font-size: 2.5em !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .course-detail-container p {
+    color: #2a3f5f !important;
+    font-size: 1.2em !important;
+    line-height: 1.6 !important;
+    margin-bottom: 30px !important;
+  }
+  
+  .course-detail-container h2 {
+    color: #1c2e4a !important;
+    font-size: 1.8em !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .course-detail-container ul {
+    list-style-type: disc !important;
+    padding-left: 20px !important;
+    margin-bottom: 30px !important;
+  }
+  
+  .course-detail-container ul li {
+    color: #1c2e4a !important;
+    font-size: 1.1em !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .course-detail-container video {
+    display: block !important;
+    max-width: 100% !important;
+    margin: 20px 0 !important;
+    border: 2px solid #b3c6e0 !important;
+    border-radius: 8px !important;
+  }
+  
+  .course-detail-container .qna-section {
+    margin-top: 40px !important;
+    padding: 20px !important;
+    background: #e6f2ff !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .course-detail-container .qna-section h3 {
+    color: #2a3f5f !important;
+    font-size: 1.5em !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .course-detail-container .qna-section p {
+    color: #2a3f5f !important;
+    font-size: 1.2em !important;
+    line-height: 1.6 !important;
+  }
+  
+  /* Q&A Section Styles */
+  .course-showing-container {
+    padding: 20px !important;
+    font-family: Arial, sans-serif !important;
+    background: linear-gradient(to right, #e0f7fa , #b2ebf2 ) !important;
+  }
+  
+  .course-showing-header {
+    margin-bottom: 20px !important;
+  }
+  
+  .course-showing-details,
+  .course-showing-video,
+  .course-showing-qna {
+    margin-bottom: 30px !important;
+  }
+  
+  .course-showing-video video {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .course-showing-qna {
+    margin-top: 30px !important;
+  }
+  
+  .qna-input {
+    margin-bottom: 10px !important;
+  }
+  
+  .qna-input textarea {
+    width: 100% !important;
+    height: 80px !important;
+    padding: 10px !important;
+    font-size: 16px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+  }
+  
+  .qna-input button {
+    margin-top: 10px !important;
+    padding: 10px 15px !important;
+    font-size: 16px !important;
+    color: #fff !important;
+    background-color: #007bff !important;
+    border: none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+  }
+  
+  .qna-input button:hover {
+    background-color: #0056b3 !important;
+  }
+  /* CSS for Q&A List */
+.qna-list {
+    margin-top: 0 !important;
+  }
+  
+  .qna-item {
+    height: 50px !important; /* Set fixed height for questions */
+    line-height: 50px !important; /* Align text vertically */
+    font-size: 14px !important; /* Ensure font size is appropriate */
+    background-color: #f9f9f9 !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    overflow: hidden !important; /* Hide overflow text */
+    white-space: nowrap !important; /* Prevent text from wrapping */
+    text-overflow: ellipsis !important; /* Show ellipsis for overflow text */
+    position: relative !important; /* For positioning reply buttons */
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 10px !important;
+  }
+  
+  .qna-item-buttons {
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .reply-btn {
+    margin-left: 10px !important;
+    padding: 5px 10px !important;
+    font-size: 14px !important;
+    color: #007bff !important;
+    background: none !important;
+    border: 1px solid #007bff !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+  }
+  
+  .reply-btn:hover {
+    background-color: #007bff !important;
+    color: #fff !important;
+  }
+  
+  .replies-link {
+    color: #007bff !important;
+    text-decoration: underline !important;
+    cursor: pointer !important;
+    margin-left: 5px !important;
+    font-size: 14px !important;
+    display: inline-block !important;
+  }
+  
+  .qna-reply {
+    font-size: 12px !important; /* Smaller font size for replies */
+    background-color: #e0f7fa !important;
+    border: 1px solid #b2ebf2 !important;
+    border-radius: 4px !important;
+    height: auto !important; /* Allow height to adjust based on content */
+    line-height: 16px !important; /* Adjust line height for replies */
+  }
+  
+  .reply-popup {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    padding: 15px !important;
+    background: #fff !important;
+    border: 1px solid #ddd !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+    max-width: 400px !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+  }
+  
+  .reply-popup textarea {
+    width: 100% !important;
+    height: 60px !important;
+    padding: 10px !important;
+    font-size: 16px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .reply-popup-actions {
+    display: flex !important;
+    justify-content: flex-end !important;
+    gap: 10px !important;
+  }
+  
+  .reply-popup button {
+    padding: 8px 12px !important;
+    font-size: 14px !important;
+    color: #fff !important;
+    background-color: #007bff !important;
+    border: none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+  }
+  
+  .reply-popup button:hover {
+    background-color: #0056b3 !important;
+  }
+  
+  .replies-view-popup {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    padding: 20px !important;
+    background: #fff !important;
+    border: 1px solid #ddd !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+    max-width: 400px !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+  }
+  
+  .replies-view-popup h3 {
+    color: #2a3f5f !important;
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .replies-list {
+    margin-top: 0 !important;
+  }
+  
+  .replies-list .qna-reply {
+    margin-bottom: 10px !important;
+    padding: 5px !important;
+    background-color: #e0f7fa !important;
+    border: 1px solid #b2ebf2 !important;
+  }
+  .course-detail-container {
+    margin-top: 8% !important;
+    padding: 20px;
+  }
+  
+  .completion-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .completion-button:hover {
+    background-color: darkgreen;
+  }
+  .suggested-projects-container {
+    margin-top: 8% !important;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .suggested-projects-container h2 {
+    color: #007bff;
+  }
+  
+  .projects-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .project-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .project-item h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .project-item p {
+    margin: 5px 0 0;
+    color: #555;
+  }
+  

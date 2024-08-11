@@ -1,0 +1,170 @@
+/* Existing styles... */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin: 0;
+  background: linear-gradient(to right, #b5d6f9, #89a4d0); /* Gradient background */
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.orgName {
+  cursor: pointer;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex: 1; /* Ensures that the menu items take up available space */
+}
+
+.menu li {
+  margin-right: 16px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #512da8; /* Primary text color */
+  padding: 10px 15px;
+  display: block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #6a5b8d; /* Hover background color */
+  color: #fff; /* Hover text color */
+}
+
+.orgName a {
+  color: #512da8; /* Ensure the organization name has the same color as other links */
+  background-color: transparent; /* Remove any background color */
+  pointer-events: none; /* Disable click events */
+  cursor: pointer; /* Change the cursor to default */
+}
+
+.login {
+  margin-left: auto; /* Pushes the login button to the far right */
+}
+
+.login a {
+  background-color: transparent;
+  border: 1px solid #512da8; /* Border color for the login button */
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #512da8; /* Text color for the login button */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login a:hover {
+  background-color: #512da8; /* Hover background color */
+  color: #fff; /* Hover text color */
+  border-radius: 5px;
+}
+
+/* Profile section for dropdown */
+.profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Pushes the profile section to the far right */
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profileIcon {
+  margin-right: 8px;
+  color: #512da8; /* Profile icon color */
+}
+
+.dropdownIcon {
+  margin-left: 8px;
+  color: #512da8; /* Dropdown icon color */
+}
+
+.dropdownMenu {
+  position: absolute; /* Change from fixed to absolute for better positioning */
+  top: 60px; /* Adjust to be below the navbar */
+  right: 0; /* Adjust to align with the profile section */
+  background-color: #fff; /* Dropdown background color */
+  border: 1px solid #ddd; /* Dropdown border color */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 200px; /* Adjust width as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownItem {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333; /* Text color for dropdown items */
+  transition: background-color 0.3s ease;
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0; /* Hover background color for dropdown items */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .menu li:last-child {
+    margin-bottom: 0;
+  }
+
+  .login {
+    margin-left: 0; /* Center login button on small screens */
+    margin-top: 10px;
+  }
+  
+  .dropdownMenu {
+    right: 10px; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .menu a {
+    font-size: 14px; /* Smaller font size for very small screens */
+    padding: 8px 12px;
+  }
+}

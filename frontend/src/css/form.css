@@ -1,0 +1,240 @@
+/* Namespace: 'at' for 'Academic Tinder' */
+/* General Reset and Global Styles */
+
+/* Form Container */
+.at-form-container {
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-left:  15%;
+    margin-right:  15%;
+    margin-top: 6%;
+}
+
+/* Header Styles */
+.at-form-container__header {
+    text-align: center;
+    padding: 55px 0;
+    height: 150px;
+    background-color: #512da8;
+    color: wheat;
+}
+
+.at-form-container__subheader {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Image Upload Section */
+.at-image-upload {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 40px;
+    height: 150px;
+}
+
+#at-image-upload__input {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.at-image-upload__preview {
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    margin-left: 20px;
+    flex-shrink: 0;
+    display: block;
+    visibility: hidden;
+}
+
+.at-image-upload__label {
+    font-size: 28px;
+    color: #512da8;
+}
+
+/* Section Titles */
+.at-section-title {
+    font-size: 28px;
+    color: #512da8;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.at-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.at-label {
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Form Controls */
+.at-select,
+.at-text-input {
+    background-color: #eee;
+    border: none;
+    margin: 10px 35px;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+/* Submit Button */
+.at-submit {
+    width: 90%;
+    margin: 40px 35px;
+    padding: 10px 20px;
+    background-color: #512da8;
+    color: wheat;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.at-submit:hover {
+    background-color: #2e3fa1;
+}
+/* Skills Section */
+.at-skill {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.at-skill input[type="text"] {
+    width: 90%;
+    margin: 10px 35px;
+}
+
+/* Add Skill Button */
+.at-add-skill-button {
+    max-width: max-content;
+    margin: 10px 35px;
+    padding: 10px 20px;
+    background-color: #6a1b9a; /* Slightly different from submit button */
+    color: wheat;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.at-add-skill-button:hover {
+    background-color: #4a148c;
+}
+
+/* Error Message */
+.at-error-message {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Project and Social Media Links */
+.at-links {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.at-add-link-button {
+    max-width: max-content;
+    margin: 10px 35px;
+    padding: 10px 20px;
+    background-color: #6a1b9a; /* Slightly different from submit button */
+    color: wheat;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.at-add-link-button:hover {
+    background-color: #4a148c;
+}
+
+.at-links ul {
+    margin-left: 35px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.at-links li {
+    margin: 5px 0;
+}
+
+.at-links a {
+    color: #512da8;
+    text-decoration: none;
+}
+
+.at-links a:hover {
+    text-decoration: underline;
+}
+
+/* Added Skills */
+.at-added-skills {
+    margin-left: 35px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.at-added-skills li {
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: #f3e5f5; /* Slightly different background for added skills */
+    border-radius: 5px;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 1054px) {
+    .at-text-input,
+    .at-select,
+    .at-submit {
+        margin: 10px 27px;
+    }
+}
+
+@media screen and (max-width: 731px) {
+    .at-text-input,
+    .at-select,
+    .at-submit {
+        margin: 10px 17px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .at-text-input,
+    .at-select,
+    .at-submit {
+        margin: 10px 14px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .at-text-input,
+    .at-select,
+    .at-submit {
+        margin: 10px 9px;
+    }
+}
